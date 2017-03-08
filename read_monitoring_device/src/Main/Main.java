@@ -61,7 +61,7 @@ public class Main {
                 System.out.println("SPL: " + splStr + " dBA");
 
                 // Send data to AWS
-                utils.sendDataToAWS(temperature, humidity, pressure, humidity, spl);
+                utils.sendDataToAWS(temperature, humidity, pressure, lux, spl);
 
                 //Wait for next measurement 
                 Thread.sleep(measurementInterval);
